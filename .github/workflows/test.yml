@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-20.04 # latest stable lts, update as needed
     strategy:
       matrix:
-        java: [8, 17] # Replace with Java version
+        java: [8] # Replace with Java version
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK ${{ matrix.java }}
